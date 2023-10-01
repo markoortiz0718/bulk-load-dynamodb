@@ -1,0 +1,17 @@
+{
+  "app": "python3 app.py",
+  "context": {
+      "environment": {
+          "AWS_REGION": "us-east-1",
+          "S3_BUCKET_NAME": "bulk-load-dynamodb-bucket",
+          "SNS_TOPIC_NAME": "upstream_topic",
+          "SQS_QUEUE_NAME": "queue_for_sns_messages",
+          "SQS_QUEUE_VISIBILITY_TIMEOUT_SECONDS": 60,
+          "SQS_DLQ_NAME": "dlq_for_sns_messages",
+          "SQS_QUEUE_NAME_DOWNSTREAM": "downstream_queue",
+          "SQS_DLQ_NAME_DOWNSTREAM": "downstream_dlq",
+          "DYNAMODB_TABLE_NAME": "bulk-load-dynamodb-table",
+          "PARTITION_ROW_COUNT": 100000
+      }
+  }
+}

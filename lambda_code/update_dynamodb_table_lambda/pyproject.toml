@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "update-dynamodb-table-lambda"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "update_dynamodb_table_lambda"}]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+
+[tool.poetry.group.dev.dependencies]
+boto3 = "^1.28.26"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
